@@ -53,9 +53,13 @@ let updateValue = (value) => {
 
 
 let display = document.querySelector("#display h2");
+let displayH1 = document.querySelector("#display h1");
+displayH1.innerHTML = total;
 
 display.innerHTML = displayValue;
 
-let populateDisplay = () => {
+let total  = 0;
 
+let populateDisplay = (displayValue, value) => {
+     total = displayValue + value;
 }
