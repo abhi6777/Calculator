@@ -1,0 +1,51 @@
+body{
+     background-color: rgb(66, 116, 98);
+}
+
+body div{
+     margin: 1px;
+}
+
+#container{
+     display: flex;
+     gap: 2px;
+}
+
+.center{
+     align-items: center;
+     justify-content: center;
+}
+
+#display{
+     display: grid;
+     color: white;
+     font-size: x-large;
+}
+
+#calculatorNumbers{
+     width: 170px;
+     gap: 2px;
+}
+
+button{
+     height: 50px;
+     width: 50px;
+     margin: 1px;
+     border: 2px solid black;
+     border-radius: 10px;
+     font-size: large;
+     background-color: rgb(198, 198, 28);
+}
+
+button:hover{
+     background-color: black;
+     color: white;
+     border: 2px solid black;
+     border-radius: 10px;
+     font-size: large;
+     margin: 1px;
+}
+
+#calculatorOperator{
+     display: grid;
+}
