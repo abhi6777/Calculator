@@ -49,3 +49,7 @@ button:hover{
 #calculatorOperator{
      display: grid;
 }
+
+#display h2{
+     height: 30px;
+}

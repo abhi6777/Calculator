@@ -35,31 +35,27 @@ const operate = (operator, firstNumber, secondNumber) => {
 
 const allButtons = document.querySelectorAll("button");
 
-let value;
+let buttonValue;
 
 allButtons.forEach(buttons => {
      buttons.addEventListener("click", function() {
-          value = buttons.innerHTML;
-          updateValue(value);
+          buttonValue = buttons.innerHTML;
+          updateDisplay(buttonValue);
      });
 });
-let displayValue = 0;
 
-let updateValue = (value) => {
-     displayValue = value;
-     display.innerHTML = value;
-     console.log(value);
+let displayValue = "";
+
+// function to update the display value
+function updateDisplay(buttonValue){
+     displayValue += buttonValue;
+     updateDisplayOnPage();
 };
 
+// function to update the display on the HTML page
+function updateDisplayOnPage() {
+     let displayElement = document.querySelector("#display h2");
 
-let display = document.querySelector("#display h2");
-let displayH1 = document.querySelector("#display h1");
-displayH1.innerHTML = total;
+     displayElement.textContent = displayValue;
+};
 
-display.innerHTML = displayValue;
-
-let total  = 0;
-
-let populateDisplay = (displayValue, value) => {
-     total = displayValue + value;
-}
